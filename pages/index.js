@@ -215,7 +215,7 @@ const QuizValidacion = () => {
             {responses.wantsTrial && responses.email && (
               <div className="bg-white p-4 rounded-lg mt-4">
                 <p className="font-semibold text-green-600">
-                  ✅ ¡Perfecto! Te enviaremos el acceso de prueba a{" "}
+                  ✅ ¡Perfecto! Te enviaremos más información a{" "}
                   {responses.email}
                 </p>
               </div>
