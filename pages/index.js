@@ -7,7 +7,7 @@ import {
   BarChart3,
   Scale,
   DollarSign,
-  Gift,
+  PhoneCall,
   CheckCircle,
 } from "lucide-react";
 import emailjs from "emailjs-com";
@@ -57,6 +57,12 @@ const QuizValidacion = () => {
 
   const benefits = [
     {
+      id: "valor",
+      icon: DollarSign,
+      text: "Liberar tiempo para generar valor",
+      color: "bg-yellow-500",
+    },
+    {
       id: "tiempo",
       icon: Zap,
       text: "Reducir tiempo de gestión",
@@ -79,12 +85,6 @@ const QuizValidacion = () => {
       icon: Scale,
       text: "Cumplir normativas laborales",
       color: "bg-purple-500",
-    },
-    {
-      id: "valor",
-      icon: DollarSign,
-      text: "Liberar tiempo para generar valor",
-      color: "bg-yellow-500",
     },
   ];
 
@@ -449,13 +449,14 @@ const QuizValidacion = () => {
         {/* Pantalla 4: Trial */}
         {currentStep === 4 && (
           <div className="bg-white rounded-2xl p-8 shadow-xl">
-            <Gift className="w-16 h-16 mx-auto text-green-500 mb-6" />
+            <PhoneCall className="w-16 h-16 mx-auto text-green-500 mb-6" />
             <h2 className="text-2xl font-bold text-center mb-6">
-              🎁 ¿Quieres probar GRATIS por 30 días?
+              ¿Te gustaría que te contactemos para enviarte más información
+              sobre la solución?
             </h2>
             <p className="text-center text-gray-600 mb-8">
-              Acceso completo + soporte personalizado + descuento del 50% si
-              decides continuar
+              Otras funcionalidades + soporte personalizado + descuento del 20%
+              si decides implementar
             </p>
 
             <div className="flex gap-4 mb-8">
@@ -469,7 +470,7 @@ const QuizValidacion = () => {
                     : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                 }`}
               >
-                ✅ ¡Sí, quiero probarlo!
+                ✅ ¡Sí, quiero recibir más información!
               </button>
               <button
                 onClick={() =>
