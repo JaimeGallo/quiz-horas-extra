@@ -410,7 +410,7 @@ const QuizValidacion = () => {
         {currentStep === 3 && (
           <div className="bg-white rounded-2xl p-8 shadow-xl">
             <h2 className="text-2xl font-bold text-center mb-6">
-              💵 ¿Cuál es tu presupuesto mensual para resolver este dolor?
+              💵 ¿Cuánto estarías dispuesto a pagar por esta solución?
             </h2>
 
             <div className="space-y-4 mb-8">
