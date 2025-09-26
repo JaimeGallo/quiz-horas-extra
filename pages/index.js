@@ -90,21 +90,21 @@ const QuizValidacion = () => {
 
   const budgetOptions = [
     {
-      value: "menos_100k",
-      label: "Menos de $100.000 COP/mes",
+      value: "menos_500k",
+      label: "Menos de $500.000 COP/mes",
       roi: "ROI: +300%",
     },
     {
-      value: "100k_300k",
-      label: "$100.000 - $300.000 COP/mes",
+      value: "500k_800k",
+      label: "$500.000 - $800.000 COP/mes",
       roi: "ROI: +200%",
     },
     {
-      value: "300k_500k",
-      label: "$300.000 - $500.000 COP/mes",
+      value: "800k_1M",
+      label: "$800.000 - $1.000.000 COP/mes",
       roi: "ROI: +150%",
     },
-    { value: "mas_500k", label: "Más de $500.000 COP/mes", roi: "ROI: +100%" },
+    { value: "mas_1M", label: "Más de $1.000.000 COP/mes", roi: "ROI: +100%" },
   ];
 
   const handleBenefitToggle = (benefitId) => {
